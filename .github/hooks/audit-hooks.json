@@ -1,0 +1,11 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/audit-tool-use.cjs",
+        "timeout": 10
+      }
+    ]
+  }
+}

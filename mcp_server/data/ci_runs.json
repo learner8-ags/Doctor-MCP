@@ -1,0 +1,8 @@
+{
+  "RUN-1042": {
+    "status": "failed",
+    "signature": "CONFIG_ENV_RENAME",
+    "excerpt": "integration_timeout: expected 45, got 30",
+    "file_hint": "app/main.py"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "CONFIG_ENV_RENAME": {
+    "summary": "Platform standard renamed JOB_TIMEOUT_SECONDS to HPE_JOB_TIMEOUT_SEC. Preserve fallback to old variable during migration.",
+    "recommended_test": "Set HPE_JOB_TIMEOUT_SEC=45 and assert /api/job-config returns 45."
+  }
+}

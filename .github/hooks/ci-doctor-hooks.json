@@ -1,0 +1,25 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/pre-tool-policy.cjs",
+        "timeout": 15
+      }
+    ],
+    "PostToolUse": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/post-mcp-validation.cjs",
+        "timeout": 90
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/stop-completion-gate.cjs",
+        "timeout": 90
+      }
+    ]
+  }
+}
